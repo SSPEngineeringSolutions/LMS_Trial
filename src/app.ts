@@ -1,10 +1,10 @@
 import express from "express";
 
-const application = express();
+const app = express();
 
 const port = process.env.PORT || 3000;
 
-application
+app
   .get("/", (req, res) => {
     res.send({
       message: "Welcome!!!!!!",
@@ -16,6 +16,6 @@ application
     });
   });
 
-application.listen(port, () => {
+app.listen(port, () => {
   console.log(`Application listening on port ${port}`);
 });
