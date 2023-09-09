@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 application
   .get("/", (req, res) => {
     res.send({
-      message: "Hello, World!!!!!!!",
+      message: "Welcome!!!!!!",
     });
   })
   .get("/random", (req, res) => {
